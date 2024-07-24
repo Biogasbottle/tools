@@ -9,10 +9,16 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       home: Scaffold(
         body: Center(
-          child: Text('Hello World 123!456'),
+          child: Column(
+            children: [
+              const Text('Hello World 123!456'),
+              const SizedBox(height: 16),
+              IconButton(onPressed: () {}, icon: const Icon(Icons.abc))
+            ],
+          ),
         ),
       ),
     );

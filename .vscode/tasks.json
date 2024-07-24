@@ -18,14 +18,18 @@
 			"command": "cp",
 			"args": [
 				"-R",
-				"build/web",
-				"docs"
+				"-Force",
+				"build/web/*",
+				"docs/"
 			],
 			"group": "build",
 			"problemMatcher": [],
 			"label": "publish web",
 			"detail": "",
-			"dependsOn": "build web",
+			"dependsOn": [
+				"build web",
+				// "clean docs"
+			],
 			"dependsOrder": "sequence"
 		},
 	]
