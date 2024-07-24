@@ -10,7 +10,7 @@ name: deploy_flutter_web
 on:
   push:
     branches:
-      - master
+      - main
 #  pull_request:
 #    branches:
 #      - master
