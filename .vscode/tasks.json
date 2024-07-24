@@ -1,0 +1,32 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "flutter",
+			"command": "flutter",
+			"args": [
+				"build",
+				"web"
+			],
+			"group": "build",
+			"problemMatcher": [],
+			"label": "build web",
+			"detail": ""
+		},
+		{
+			"type": "shell",
+			"command": "cp",
+			"args": [
+				"-R",
+				"build/web",
+				"docs"
+			],
+			"group": "build",
+			"problemMatcher": [],
+			"label": "publish web",
+			"detail": "",
+			"dependsOn": "build web",
+			"dependsOrder": "sequence"
+		},
+	]
+}
