@@ -14,7 +14,7 @@ class MainApp extends StatelessWidget {
         body: Center(
           child: Column(
             children: [
-              const Text('Hello World 123!456'),
+              const Text('Test workflows'),
               const SizedBox(height: 16),
               IconButton(onPressed: () {}, icon: const Icon(Icons.abc))
             ],
